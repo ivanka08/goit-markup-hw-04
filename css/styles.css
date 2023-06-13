@@ -59,6 +59,7 @@ img {
 /* ====================================== HEADER =========================================== */
 .page-header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -120,8 +121,9 @@ img {
     height: 4px;
     left: 0px;
     top: 64px;
-    background: var(--second-accent-color-text);
+    background: #404bbf;;
     border-radius: 2px;
+    bottom: -1px;
 }
 
 .portfolio-line {
@@ -471,7 +473,7 @@ img {
     overflow: hidden;    
 }
 
-.cover-item:hover .examples-cover-text {
+.cover-item:hover .examples-cover-text, .cover-item:focus .examples-cover-text {
     transform: translateY(0%);
 }
 
