@@ -121,7 +121,7 @@ img {
     height: 4px;
     left: 0px;
     top: 64px;
-    background: #404bbf;;
+    background: #404bbf;
     border-radius: 2px;
     bottom: -1px;
 }
@@ -137,8 +137,9 @@ img {
     height: 4px;
     left: 0px;
     top: 64px;
-    background: var(--second-accent-color-text);
+    background: #404bbf;
     border-radius: 2px;
+    bottom: -1px;
 }
 
 .contacts {
@@ -473,7 +474,8 @@ img {
     overflow: hidden;    
 }
 
-.cover-item:hover .examples-cover-text, .cover-item:focus .examples-cover-text {
+.cover-item:hover .examples-cover-text,
+.cover-item:focus .examples-cover-text {
     transform: translateY(0%);
 }
 
