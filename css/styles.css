@@ -112,6 +112,7 @@ img {
 
 .studio-line {
     position: relative;
+    color: var(--second-accent-color-text);
 }
 
 .studio-line::after {
@@ -121,13 +122,14 @@ img {
     height: 4px;
     left: 0px;
     top: 64px;
-    background: #404bbf;
+    background: var(--second-accent-color-text);
     border-radius: 2px;
     bottom: -1px;
 }
 
 .portfolio-line {
     position: relative;
+    color: var(--second-accent-color-text);
 }
 
 .portfolio-line::after {
@@ -137,7 +139,7 @@ img {
     height: 4px;
     left: 0px;
     top: 64px;
-    background: #404bbf;
+    background: var(--second-accent-color-text);
     border-radius: 2px;
     bottom: -1px;
 }
@@ -337,6 +339,11 @@ img {
     height: 40px;
     background: var(--accent-color-text);
     border-radius: 50%;
+    transition: background-color var(--transition);
+}
+
+.our-team-networks-link:hover, .our-team-networks-link:focus {
+    background-color: var(--second-accent-color-text);
 }
 
 .icon-our-team {
@@ -371,6 +378,10 @@ img {
     border: 1px solid #8E8F99;
     border-radius: 4px;
 }
+
+/* .customers-link:hover, .customers-link:focus .customer-icon {
+    fill: var(--second-accent-color-text);
+} */
 
 .customer-icon {
     width: 104px;
@@ -474,7 +485,10 @@ img {
     overflow: hidden;    
 }
 
-.cover-item:hover .examples-cover-text,
+.cover-item:hover .examples-cover-text {
+    transform: translateY(0%);
+}
+
 .cover-item:focus .examples-cover-text {
     transform: translateY(0%);
 }
@@ -603,23 +617,34 @@ img {
 }
 
 .close-button {
-    position: relative;
+    position: absolute;
     width: 24px;
     height: 24px;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    margin-top: 24px;
+    padding: 0;
     margin-left: 360px;
     cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button:hover, .close-button:focus {
+    background-color: var(--second-accent-color-text);
+    border: none;
 }
 
 .closing-modal {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.closing-modal:hover, .closing-modal:focus {
+    fill: #ffffff;
+}
+
+
