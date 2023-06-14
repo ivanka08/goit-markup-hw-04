@@ -490,7 +490,7 @@ img {
     transform: translateY(0%);
 }
 
-.cover-item:focus .examples-cover-text {
+.examples-item:focus .examples-cover-text {
     transform: translateY(0%);
 }
 
